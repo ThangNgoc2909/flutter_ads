@@ -1,0 +1,83 @@
+<com.google.android.gms.ads.nativead.NativeAdView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC1F3360"
+        android:minHeight="50dp" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Badge Ad -->
+            <LinearLayout android:layout_width="19dp" android:layout_height="15dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="19dp" android:layout_height="15dp"
+                    android:background="@layout/common_native_ad_text" android:text="Ad"
+                    android:textColor="#FFFFFF" android:textSize="9sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Spacer -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <!-- Header -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp" android:paddingRight="16dp">
+
+                <!-- App Icon -->
+                <LinearLayout android:layout_width="42dp" android:layout_height="42dp">
+                    <ImageView android:id="@+id/ad_app_icon" android:layout_width="42dp"
+                        android:layout_height="42dp" android:layout_centerInParent="true" />
+                </LinearLayout>
+
+                <!-- text -->
+                <LinearLayout android:layout_weight="1" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <!-- headline -->
+                    <TextView android:id="@+id/ad_headline"
+                        android:layout_width="fill_parent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3C84F0"
+                        android:textSize="14sp"
+                        android:fontWeight="500" />
+                    <!-- ad_advertise -->
+                    <TextView android:id="@+id/ad_body" android:layout_width="fill_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:fontWeight="500" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Spacer -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <!-- button -->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="vertical" android:gravity="center" android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+                <Button android:id="@+id/ad_call_to_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp" android:gravity="center"
+                    android:textSize="16sp" android:textColor="#ffffff"
+                    android:background="@layout/common_native_ad_button" />
+            </LinearLayout>
+
+            <!-- Spacer -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="16dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>
